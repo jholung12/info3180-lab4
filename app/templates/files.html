@@ -7,9 +7,9 @@
 
 <div class="image-container">
 {% for filename in file_list %}
-
-    <img src="{{ url_for('get_image', filename=filename) }}" />
-
+    <div class="image">
+        <img src="{{ url_for('get_image', filename=filename) }}" />
+    </div>
 {% endfor %}
 </div>
 
